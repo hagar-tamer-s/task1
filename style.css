@@ -26,5 +26,31 @@ li a {
 }
 
 li a:hover {
-    background-color: #689eaf;
+    background-color: #6295a5;
+}
+
+section div {
+    display:inline-block;
+    align-items: center;
+    padding: 10px;
+    margin: 40px 20px;
+    height: 250px;
+    width: 250px;
+    border: 1px solid #64a8bd;
+    border-radius: 10px;
+}
+section img {
+    height: 100px;
+    width: 250px;
+}
+
+section button {
+    background-color: #64a8bd;
+    color: blanchedalmond;
+    border-radius: 30%;
+    width: 100px; height: 35px;
+}
+
+section button:hover {
+    background-color: #6295a5;
 }
