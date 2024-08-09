@@ -1,0 +1,30 @@
+body {
+    font-family: "Zilla Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 5px;
+    position: sticky;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #64a8bd;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #689eaf;
+}
