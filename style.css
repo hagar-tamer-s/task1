@@ -95,3 +95,30 @@ footer button:hover {
     background-color: rgb(85, 83, 83);
     transform: rotate(360deg);
 }
+
+@media only screen and (max-width: 599px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* الأجهزة اللوحية (بين 600 و 1024 بكسل) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* شاشات الكمبيوتر المكتبي (بين 1025 و 1440 بكسل) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* شاشات الكمبيوتر المكتبي الكبيرة (أكبر من 1440 بكسل) */
+@media only screen and (min-width: 1441px) {
+    body {
+        font-size: 20px;
+    }
+}
