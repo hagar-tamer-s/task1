@@ -1,27 +1,30 @@
 body {
     font-family: "Zilla Slab", serif;
+    font-size: 20px;
     font-weight: 300;
     font-style: normal;
 
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    margin: 5px;
-    position: sticky;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     background-color: #64a8bd;
 }
 
+li {
+    float: left; 
+}
 li a {
+    display: block;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 20px 40px;
     text-decoration: none;
 }
 
@@ -34,7 +37,7 @@ section div {
     align-items: center;
     padding: 10px;
     margin: 40px 20px;
-    height: 250px;
+    height: 300px;
     width: 250px;
     border: 1px solid #64a8bd;
     border-radius: 10px;
@@ -44,13 +47,51 @@ section img {
     width: 250px;
 }
 
+/* .animation {
+    position: relative;
+    animation-name: change;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+@keyframes change {
+    0%   {background-color:#64a8bd; left:0px; top:0px;}
+    25%  {background-color:rgb(236, 40, 105); left:80px; top:0px;}
+    50%  {background-color:rgb(55, 110, 146); left:80px; top:30px;}
+    75%  {background-color:rgb(78, 177, 78); left:0px; top:30px;}
+    100% {background-color:#64a8bd; left:0px; top:0px;}
+} */
+
 section button {
     background-color: #64a8bd;
     color: blanchedalmond;
-    border-radius: 30%;
+    border-radius: 30px;
     width: 100px; height: 35px;
+    transition: width 2s;
 }
 
 section button:hover {
     background-color: #6295a5;
+    width: 200px;
+}
+
+footer {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+footer img {
+    margin-top: 60px;
+}
+
+footer button{
+    border-radius: 40px;
+    width: 90px; height: 30px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+footer button:hover {
+    background-color: rgb(85, 83, 83);
+    transform: rotate(360deg);
 }
