@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Zilla Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    color: white;
+    height: 100vh;
+    background: linear-gradient(to right,#673e29 ,#a49d9a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-position: center;
+    width: 85%;
+    height: 590px;
+    background-image: linear-gradient(to right,#673e29dc 30%,#a49d9aaf),
+                url('./download\ \(1\).jfif');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container:hover {
+    background-image: linear-gradient(to right,#673e29dc 30%,transparent),
+                url('./download\ \(1\).jfif');
+}
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+ul {
+    width: 60%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ul a {
+    border-bottom: 2px solid transparent;
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+ul a:hover{
+        border-bottom-color: white;
+}
+
+.content{
+    color: white;
+    width: 50%;
+    margin: 50px;
+    padding: 90px;
+}
+
+.content h2{
+    text-transform: uppercase;
+    font-size: 80px;
+}
+
+.content p{
+    letter-spacing: 3px;
+    width: 350px;
+    padding: 20px 0;
+}
+
+.content button {
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.content button:hover{
+    background-color: transparent;
+    border-color: white;
+    color:white;
+}
