@@ -1,0 +1,116 @@
+body{
+    
+    font-family: "Zilla Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#exampleDataList {
+    width: 50%;
+    margin: auto;
+}
+
+#buyBtn {
+    background-color: #58949d;
+    color: white;
+}
+
+#buyBtn:hover {
+    background-color: #9dcfdb;
+}
+
+
+body.light-mode {
+    background-color: #eed5ad;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode #nav {
+    background-color: #916c4f;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode #nav {
+    background-color: rgb(29, 28, 28);
+}
+
+#nav {
+    background-color: #916c4f;
+}
+
+body {
+    background-color: #eed5ad;
+    color: black;
+}
+
+#switch-mode {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+}
+
+#switch-mode img {
+    width: 40px;
+    height: 40px;
+}
+
+#view {
+    background-color: #2a290a;
+    border-radius: 7px;
+    border-color: #473609;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+#view:hover {
+    background-color: #473609;
+}
+
+#btn1 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #473609;
+}
+
+footer {
+    background-color:#a57f69;
+    color: white;
+
+}
+
+ul a{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+ul a:hover{
+    color: gray;
+}
+
+#line {
+    border-top : 1px solid white;
+    margin: auto;
+    width: 50%;
+    padding-top: 20px;
+}
+
+.bottom {
+    padding-top: 20px; padding-bottom: 20px;
+    text-align: center;
+}
