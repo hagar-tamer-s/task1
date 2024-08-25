@@ -34,3 +34,39 @@ btn1.addEventListener('click' , function() {
         behavior: 'smooth'
     })
 })
+
+$(document).ready(function() {
+    $("#myform").submit(function (event) {
+        var isvalid = true;
+        $(".error").hide();
+        
+        if($("#name").val().trim() === ''){
+            $("#name-error").show();
+            isvalid = false;
+        }
+
+
+        if( $("#email").val().trim() === ''){
+            $("#email-error").show();
+            isvalid = false;
+        }
+
+
+        if( $("#age").val().trim() === ''){
+            $("#age-error").show();
+            isvalid = false;
+        }
+
+
+        if( $("#gender").val().trim() === ''){
+            $("#gender-error").show();
+            isvalid = false;
+        }
+
+        if(!isvalid){
+            event.preventDefault();
+        }else{
+            alert('all data send')
+        }
+    })
+})
